@@ -1,0 +1,11 @@
+C:\Users\Sergey\Desktop\FQW\DiplomAPI\DiplomAPI\bin\Release\net5.0\publish\DiplomAPI.exe
+C:\Users\Sergey\Desktop\FQW\DiplomAPI\DiplomAPI\bin\Release\net5.0\publish\appsettings.Development.json
+C:\Users\Sergey\Desktop\FQW\DiplomAPI\DiplomAPI\bin\Release\net5.0\publish\appsettings.json
+C:\Users\Sergey\Desktop\FQW\DiplomAPI\DiplomAPI\bin\Release\net5.0\publish\DiplomAPI.dll
+C:\Users\Sergey\Desktop\FQW\DiplomAPI\DiplomAPI\bin\Release\net5.0\publish\DiplomAPI.deps.json
+C:\Users\Sergey\Desktop\FQW\DiplomAPI\DiplomAPI\bin\Release\net5.0\publish\DiplomAPI.runtimeconfig.json
+C:\Users\Sergey\Desktop\FQW\DiplomAPI\DiplomAPI\bin\Release\net5.0\publish\DiplomAPI.pdb
+C:\Users\Sergey\Desktop\FQW\DiplomAPI\DiplomAPI\bin\Release\net5.0\publish\Microsoft.OpenApi.dll
+C:\Users\Sergey\Desktop\FQW\DiplomAPI\DiplomAPI\bin\Release\net5.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Sergey\Desktop\FQW\DiplomAPI\DiplomAPI\bin\Release\net5.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Sergey\Desktop\FQW\DiplomAPI\DiplomAPI\bin\Release\net5.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
