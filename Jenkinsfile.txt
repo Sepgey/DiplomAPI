@@ -1,35 +1,28 @@
-pipeline 
-{
-    agent any
+properties ([disableConcurrentBuilds()])
 
-    stages 
-    {
-        stage('Build') 
-        {
-            steps 
-            {
-                echo 'Start of stage Build'
-                echo 'Building...'
-                echo 'End of stage building'
-            }
-        }
-        stage('Test') 
-        {
-            steps 
-            {
-                echo 'Start of stage Test'
-                echo 'Testing...'
-                echo 'End of stage Test'
-            }
-        }
-        stage('Deploy') 
-        {
-            steps 
-            {
-                echo 'Start of stage Deploy'
-                echo 'Deploying...'
-                echo 'End of stage Deploy'
-            }
-        }
-    }
+pipeline
+{
+	agent
+	{
+		label 'master'
+	}
+	options
+	{
+		buildDiscarder(logRotator:(numToKeepStr: '10', artifactNumToKeepStr: '10'))
+		timetaps()
+	}
+	stages
+	{
+		stage("create docker image")
+		{
+			steps
+			{
+				echo "======= start building image ======="
+				dir ('DiplomAPI/Docker')
+				{
+					sh 'docker build . '
+				}
+			}
+		}
+	}
 }
