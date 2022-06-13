@@ -1,14 +1,35 @@
-node {
-    stage('Checkout git repo') {
-      git branch: 'master', url: params.git_repo
-    }
-    stage('build and publish') {
-        sh(script: "dotnet publish JenkinsIntegration -c Release ", returnStdout: true)
-    }
-    stage('deploy') {
-        azureWebAppPublish azureCredentialsId: params.azure_cred_id,
-            resourceGroup: params.res_group, appName: params.JenkinsIntegration, 
-            sourceDirectory: 
-                "JenkinsIntegration/JenkinsIntegration/bin/Release/netcoreapp2.1/publish/"
+pipeline 
+{
+    agent any
+
+    stages 
+    {
+        stage('Build') 
+        {
+            steps 
+            {
+                echo 'Start of stage Build'
+                echo 'Building...'
+                echo 'End of stage building'
+            }
         }
+        stage('Test') 
+        {
+            steps 
+            {
+                echo 'Start of stage Test'
+                echo 'Testing...'
+                echo 'End of stage Test'
+            }
+        }
+        stage('Deploy') 
+        {
+            steps 
+            {
+                echo 'Start of stage Deploy'
+                echo 'Deploying...'
+                echo 'End of stage Deploy'
+            }
+        }
+    }
 }
